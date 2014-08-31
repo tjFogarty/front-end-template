@@ -1,0 +1,5 @@
+{
+  "name": "front-end-template",
+  "description": "Starter front-end template using Gulp, Sass, Foundation and modular JavaScript",
+  "tags": ["sass", "mvcss", "gulp", "browserify", "foundation"]
+}

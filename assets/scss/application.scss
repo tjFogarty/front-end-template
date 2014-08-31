@@ -1,0 +1,34 @@
+/**
+ * Description: Harvest Festival 2014.
+ * Author: Emagine
+ *
+ * Summary:
+ * Main import file for all the site styles. Styles are not to be placed in this file.
+ * Please append to the correct file in core or modules. Failing that you probably need to create a new modules file and import it here.
+ */
+
+/* ==========================================================================
+   Vendor - e.g. Foundation by Zurb, Icons etc...
+   ========================================================================== */
+@import "../../bower_components/foundation/scss/foundation",
+        "../../bower_components/font-awesome/scss/font-awesome",
+        "../../bower_components/slick-carousel/slick/slick";
+
+/* ==========================================================================
+   Core - Things such as colours, reset, variables etc...
+   ========================================================================== */
+@import "core/config",
+        "core/helpers",
+				"core/reset",
+				"core/base",
+				"core/content";
+
+/* ==========================================================================
+   Modules - Elements on the page such as header, buttons, slider etc...
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Shame - quick hacks and fixes that need to be sorted out later
+   ========================================================================== */
+@import "shame";

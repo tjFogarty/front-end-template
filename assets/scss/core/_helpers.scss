@@ -1,0 +1,88 @@
+// *************************************
+//
+//   _helpers.scss
+//   -> Extends, functions, mixins, animations. Taken from inuit.css
+//
+// *************************************
+
+/**
+ * Font families
+ */
+%heading-font {
+  font-family: $heading-font;
+}
+
+%body-font {
+  font-family: $body-font;
+}
+
+/**
+ * Add/remove floats
+ */
+%float--right   { float:right; }
+%float--left    { float:left ; }
+%float--none    { float:none ; }
+
+/**
+ * clearfix
+ */
+
+%cf {
+  &:after{
+    content:"";
+    display:table;
+    clear:both;
+  }
+}
+
+/**
+ * Display
+ */
+
+%display--block { display: block; }
+%display--none { display: none; }
+%display--inline-block { display: inline-block; }
+
+/**
+ * Text alignment
+ */
+%text--left     { text-align:left  ; }
+%text--center   { text-align:center; }
+%text--right    { text-align:right ; }
+
+%flush          { margin:       0; }
+%flush--top     { margin-top:   0; }
+%flush--right   { margin-right: 0; }
+%flush--bottom  { margin-bottom:0; }
+%flush--left    { margin-left:  0; }
+%flush--ends    { margin-top:   0; margin-bottom:0; }
+%flush--sides   { margin-right: 0; margin-left:  0; }
+
+
+%hard           { padding:       0; }
+%hard--top      { padding-top:   0; }
+%hard--right    { padding-right: 0; }
+%hard--bottom   { padding-bottom:0; }
+%hard--left     { padding-left:  0; }
+%hard--ends     { padding-top:   0; padding-bottom:0; }
+%hard--sides    { padding-right: 0; padding-left:  0; }
+
+/**
+ * Hide content off-screen without resorting to `display:none;`, also provide
+ * breakpoint specific hidden elements.
+ */
+@mixin accessibility{
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position: absolute;
+    width:1px;
+}
+
+%accessibility,
+%visuallyhidden{
+    @include accessibility;
+}

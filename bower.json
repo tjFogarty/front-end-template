@@ -1,0 +1,13 @@
+{
+  "name": "sts",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "foundation": "zurb/bower-foundation"
+  },
+  "devDependencies": {
+    "fastclick": "~1.0.3",
+    "font-awesome": "~4.1.0",
+    "slick-carousel": "~1.3.7"
+  }
+}
